@@ -10,12 +10,6 @@ hr {
     color: white;
 }
 
-#home_btn {
-    top: 20px;
-    left: 97%;
-    position: fixed;
-}
-
 #home_btn:hover {
     background-color: grey;
     color: white;
