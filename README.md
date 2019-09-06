@@ -1,2 +1,1 @@
-# resume
-Personal Resume
+# Ameer Muhammed
