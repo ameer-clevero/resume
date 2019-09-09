@@ -1,0 +1,136 @@
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        .top {
+            o min-height: 100vh;
+            background-color: #ecfcff;
+        }
+        
+        .about {
+            margin: 0 auto;
+            text-align: center;
+            width: 30%;
+            position: relative;
+            color: #45b29a;
+        }
+        
+        .about img {
+            height: 300px;
+            width: 400px;
+            border-radius: 5px;
+            padding-top: 50px;
+        }
+        
+        .about h1 {
+            padding: 50px 10px 0px 10px;
+        }
+        
+        .about h3 {
+            padding: 10px 10px;
+        }
+        
+        .navbar {
+            float: right;
+            padding: 50px 50px;
+            height: 100px;
+        }
+        
+        .navbar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            border: #30e3ca 1px solid;
+            border-radius: 25px;
+            color: #45b29a;
+            background-color: white;
+        }
+        
+        .navbar a:hover {
+            background-color: #45b29a;
+            color: white;
+            border-width: 0px;
+        }
+        
+        #logo {
+            padding: 50px 50px;
+            height: 70px;
+            width: 70px;
+            position: relative;
+        }
+        
+        #logo-da {
+            width: 150px;
+            height: 150px;
+            border: #ecfcff 10px solid;
+            border-radius: 50%;
+            margin-top: 100px;
+        }
+        
+        .about-detailed {
+            text-align: center;
+            color: grey;
+            min-height: 100vh;
+            margin-bottom: 100px;
+        }
+        
+        .about-detailed h1 {
+            color: #45b29a;
+            margin-bottom: 75px;
+            margin-top: 75px;
+        }
+        
+        .about-detailed p {
+            line-height: 1.5;
+            width: 100%;
+            margin: 10px 10px;
+            margin-bottom: 100px;
+        }
+        
+        #skill-tab {
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            color: white;
+            background-color: #45b29a;
+        }
+        
+        .skills {
+            margin: 75px 150px;
+        }
+        
+        hr {
+            border-style: none;
+            border-top-style: dotted;
+            border-width: 5px;
+            width: 100px;
+            margin: 0 auto;
+            color: #cff6fd;
+        }
+        
+        .portfolio {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .footer {
+            background-color: #45b29a;
+            margin: 0 auto;
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+        
+        .footer a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .footer a:hover {
+            color: black;
+        }
