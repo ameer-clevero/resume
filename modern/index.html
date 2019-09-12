@@ -18,6 +18,11 @@
             document.getElementById("proj-span-2").className = "arrow-close";
             document.getElementById("proj-span-3").className = "arrow-close";
             document.getElementById("proj-span-4").className = "arrow-close";
+            document.getElementById("proj-btn-1").style.backgroundColor = "#45b29a";
+            document.getElementById("proj-btn-2").style.backgroundColor = "#45b29a";
+            document.getElementById("proj-btn-3").style.backgroundColor = "#45b29a";
+            document.getElementById("proj-btn-4").style.backgroundColor = "#45b29a";
+            document.getElementById(clicked_id).style.backgroundColor = "black";
             document.getElementById("proj-span-" + clicked_id[clicked_id.length - 1]).className = "arrow-open";
         }
     </script>
@@ -47,23 +52,23 @@
         <div style="margin:150px 100px;text-align: left;">
             <h3>
                 <h2>B.Tech</h2>Cochin University of Science and Technology </h3>
-            <h3 style="text-align: right">April 2019</h3> <br/>
+            <h4 style="text-align: right">April 2019</h4> <br/>
             <h3>
                 <h2>HSE</h2>DHSE - Govt. of Kerala</h3>
-            <h3 style="text-align: right">March 2014</h3><br/>
+            <h4 style="text-align: right">March 2014</h4><br/>
             <h3>
                 <h2>AISSE</h2> CBSE</h3>
-            <h3 style="text-align: right">March 2012</h3>
+            <h4 style="text-align: right">March 2012</h4>
         </div>
     </div>
     <div id="portfolio" class="portfolio-page">
         <h1 style="margin-bottom: 25px;">Portfolio</h1>
         <div class="portfolio">
             <div style="margin-bottom: 25px;">
-                <a style="color:white;" id="proj-btn-1" class="btn hlt-custom" data-toggle="collapse" href="#proj1" role="button" onclick='reset_proj(this.id)'>PhishHook<span id="proj-span-1" class="arrow-open">&#10148;</span></a>
-                <a style="color:white;" id="proj-btn-2" class="btn" data-toggle="collapse" href="#proj2" role="button" onclick='reset_proj(this.id)'>FTicket<span id="proj-span-2" class="arrow-close">&#10148;</span></a>
-                <a style="color:white;" id="proj-btn-3" class="btn" data-toggle="collapse" href="#proj3" role="button" onclick='reset_proj(this.id)'>Onpicnic<span id="proj-span-3" class="arrow-close">&#10148;</span></a>
-                <a style="color:white;" id="proj-btn-4" class="btn" data-toggle="collapse" href="#proj4" role="button" onclick='reset_proj(this.id)'>LectNote<span id="proj-span-4" class="arrow-close">&#10148;</span></a> </div>
+                <a style="color:white;outline-style:none;box-shadow:none;border-color:transparent;" id="proj-btn-1" class="btn hlt-custom" data-toggle="collapse" href="#proj1" role="button" onclick='reset_proj(this.id)'>PhishHook<span id="proj-span-1" class="arrow-open">&#10148;</span></a>
+                <a style="color:white;outline-style:none;box-shadow:none;border-color:transparent;" id="proj-btn-2" class="btn" data-toggle="collapse" href="#proj2" role="button" onclick='reset_proj(this.id)'>FTicket<span id="proj-span-2" class="arrow-close">&#10148;</span></a>
+                <a style="color:white;outline-style:none;box-shadow:none;border-color:transparent;" id="proj-btn-3" class="btn" data-toggle="collapse" href="#proj3" role="button" onclick='reset_proj(this.id)'>Onpicnic<span id="proj-span-3" class="arrow-close">&#10148;</span></a>
+                <a style="color:white;outline-style:none;box-shadow:none;border-color:transparent;" id="proj-btn-4" class="btn" data-toggle="collapse" href="#proj4" role="button" onclick='reset_proj(this.id)'>LectNote<span id="proj-span-4" class="arrow-close">&#10148;</span></a>                </div>
             <div class="collapse pf-cl show" id="proj1">
                 <div class="card card-body">
                     <label><strong>PhishHook - </strong>Detection Of Phishing Websites Using An Efficient Feature-Based Machine Learning Framework.<label style="float: right;">[Dec2018-Apr2019]</label></label>
@@ -74,7 +79,6 @@
                         <li>Page - Based Features </li>
                         <li>Content - Based Features </li>
                     </ul>
-
                     Novelty:
                     <ul>
                         <li>SSL Certificate Validation</li>
@@ -84,7 +88,6 @@
                     <em>Utilized: Python 3.7(CNN);JSON(Chrome WebExtension);Perl(AWIS API);HTML;CSS</em>
                 </div>
             </div>
-
             <div class="collapse pf-cl" id="proj2">
                 <div class="card card-body">
                     <label><strong>FTicket  –  </strong>Client Project<label style="float: right;">[July 2018-Oct 2018]</label></label>
@@ -94,7 +97,6 @@
 
                 </div>
             </div>
-
             <div class="collapse pf-cl" id="proj3">
                 <div class="card card-body">
                     <label><strong>Onpicnic</strong><label style="float: right;">[April 2018]</label></label>
@@ -104,7 +106,6 @@
 
                 </div>
             </div>
-
             <div class="collapse pf-cl" id="proj4">
                 <div class="card card-body">
                     <label><strong>LectNote</strong><label style="float: right;">[Dec 2017 – March 2018]</label></label>
@@ -123,13 +124,13 @@
             <label id="skill-tab" href="#">HTML</label>
             <label id="skill-tab" href="#">CSS</label>
             <label id="skill-tab" href="#">PHP</label><br>
-            <label id="skill-tab" href="#">MySQL</label></div>
+            <label id="skill-tab" href="#">MySQL</label>
+        </div>
     </div>
     <div id="contact" class="footer">
         <a href="mailto:ameer@clevero.com">Email</a>
         <a href="https://in.linkedin.com/in/ameermuhammed">LinkedIn</a>
         <a href="http://ameermuhammed.me">Website</a><br/><br/>
-
         <h6>© 2019 Clevero Inc.</h6>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
@@ -137,4 +138,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
 
-</html>
+</html

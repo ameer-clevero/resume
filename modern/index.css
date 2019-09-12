@@ -16,12 +16,6 @@
             width: 150px;
         }
         
-        .abc a:hover {
-            background-color: white;
-            color: white;
-            border-width: 0px;
-        }
-        
         .edu-page h1,
         .portfolio-page h1 {
             border: 2px;
@@ -145,6 +139,7 @@
         
         .footer a:hover {
             color: black;
+            background-colour: #45b29a;
         }
         
         .pf-cl {
@@ -187,5 +182,10 @@
         }
         
         .hlt-custom {
-            border: 3px solid #8eecff;
+            background-color: #000000;
+        }
+        
+        .portfolio-page a:hover {
+            background-color: black!important;
+            ;
         }
