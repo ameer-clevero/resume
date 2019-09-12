@@ -7,8 +7,33 @@
             margin: 0;
         }
         
+        .btn {
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            color: white;
+            background-color: #45b29a;
+            width: 150px;
+        }
+        
+        .abc a:hover {
+            background-color: white;
+            color: white;
+            border-width: 0px;
+        }
+        
+        .edu-page h1,
+        .portfolio-page h1 {
+            border: 2px;
+            border-style: dashed;
+            border-radius: 25px;
+            border-color: #b4f4ff;
+            width: 400px;
+            margin-left: 40%;
+        }
+        
         .top {
-            o min-height: 100vh;
+            min-height: 100vh;
             background-color: #ecfcff;
         }
         
@@ -48,6 +73,7 @@
             border-radius: 25px;
             color: #45b29a;
             background-color: white;
+            margin: 5px;
         }
         
         .navbar a:hover {
@@ -57,7 +83,7 @@
         }
         
         #logo {
-            padding: 50px 50px;
+            margin: 50px 50px;
             height: 70px;
             width: 70px;
             position: relative;
@@ -68,14 +94,13 @@
             height: 150px;
             border: #ecfcff 10px solid;
             border-radius: 50%;
-            margin-top: 100px;
+            margin-top: 150px;
         }
         
         .about-detailed {
             text-align: center;
             color: grey;
-            min-height: 100vh;
-            margin-bottom: 100px;
+            min-height: 90vh;
         }
         
         .about-detailed h1 {
@@ -97,23 +122,10 @@
             border-radius: 25px;
             color: white;
             background-color: #45b29a;
-        }
-        
-        .skills {
-            margin: 75px 150px;
-        }
-        
-        hr {
-            border-style: none;
-            border-top-style: dotted;
-            border-width: 5px;
-            width: 100px;
-            margin: 0 auto;
-            color: #cff6fd;
+            width: 150px;
         }
         
         .portfolio {
-            text-align: center;
             margin-bottom: 25px;
         }
         
@@ -133,4 +145,47 @@
         
         .footer a:hover {
             color: black;
+        }
+        
+        .pf-cl {
+            width: 90%;
+            margin: 0px 100px;
+            text-align: left;
+        }
+        
+        .pf-cl ul {
+            list-style-type: square;
+        }
+        
+        .edu-page {
+            min-height: 90vh;
+            background-color: #ecfcff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        .portfolio-page {
+            min-height: 100vh;
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        .arrow-open {
+            transform: rotate(90deg);
+            padding: 1px;
+            display: inline-block;
+            font-size: 0.7em;
+            border: 1px;
+            border-radius: 25px;
+            border-style: solid;
+            border-color: white;
+            margin-left: 5px;
+        }
+        
+        .arrow-close {
+            display: none;
+        }
+        
+        .hlt-custom {
+            border: 3px solid #8eecff;
         }

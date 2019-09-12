@@ -4,8 +4,23 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="tux.png">
+    <script>
+        function reset_proj(clicked_id) {
+            document.getElementById("proj-btn-1").className = "btn";
+            document.getElementById("proj1").className = "collapse pf-cl";
+            document.getElementById("proj2").className = "collapse pf-cl";
+            document.getElementById("proj3").className = "collapse pf-cl";
+            document.getElementById("proj4").className = "collapse pf-cl";
+            document.getElementById("proj-span-1").className = "arrow-close";
+            document.getElementById("proj-span-2").className = "arrow-close";
+            document.getElementById("proj-span-3").className = "arrow-close";
+            document.getElementById("proj-span-4").className = "arrow-close";
+            document.getElementById("proj-span-" + clicked_id[clicked_id.length - 1]).className = "arrow-open";
+        }
+    </script>
 </head>
 
 <body>
@@ -25,10 +40,11 @@
     <div class="about-detailed">
         <img id="logo-da" src="tux.png">
         <h1>Hi.</h1>
-        <p>I am a computer science enthusiast.<br/> Graduated from Cochin University of Science and Technology.</p>
-        <hr>
-        <h1>Education</h1>
-        <div style="margin:100px 100px;text-align: left;">
+        <p>I am a software engineer.<br/> Graduated from Cochin University of Science and Technology.</p>
+    </div>
+    <div class="edu-page">
+        <h1 style="border-color:#ffffff;border-width: 3px;">Education</h1>
+        <div style="margin:150px 100px;text-align: left;">
             <h3>
                 <h2>B.Tech</h2>Cochin University of Science and Technology </h3>
             <h3 style="text-align: right">April 2019</h3> <br/>
@@ -39,18 +55,19 @@
                 <h2>AISSE</h2> CBSE</h3>
             <h3 style="text-align: right">March 2012</h3>
         </div>
-        <hr>
-        <h1 id="portfolio">Portfolio</h1>
+    </div>
+    <div id="portfolio" class="portfolio-page">
+        <h1 style="margin-bottom: 25px;">Portfolio</h1>
         <div class="portfolio">
-            <label id="skill-tab" href="#">PhishHook</label>
-            <label id="skill-tab" href="#">FTicket</label>
-            <label id="skill-tab" href="#">Onpicnic</label>
-            <label id="skill-tab" href="#">LectNote</label> <br/><br/><br/><br/><br/>
-
-            <!--  <ul>
-                <li>
-                    <strong>PhishHook </strong> - Detection Of Phishing Websites Using An Efficient Feature-Based Machine Learning Framework. [Dec2018-Apr2019] Following four features are extracted from a webpage using a Chrome extension and fed to random
-                    forest machine learning algorithm:
+            <div style="margin-bottom: 25px;">
+                <a style="color:white;" id="proj-btn-1" class="btn hlt-custom" data-toggle="collapse" href="#proj1" role="button" onclick='reset_proj(this.id)'>PhishHook<span id="proj-span-1" class="arrow-open">&#10148;</span></a>
+                <a style="color:white;" id="proj-btn-2" class="btn" data-toggle="collapse" href="#proj2" role="button" onclick='reset_proj(this.id)'>FTicket<span id="proj-span-2" class="arrow-close">&#10148;</span></a>
+                <a style="color:white;" id="proj-btn-3" class="btn" data-toggle="collapse" href="#proj3" role="button" onclick='reset_proj(this.id)'>Onpicnic<span id="proj-span-3" class="arrow-close">&#10148;</span></a>
+                <a style="color:white;" id="proj-btn-4" class="btn" data-toggle="collapse" href="#proj4" role="button" onclick='reset_proj(this.id)'>LectNote<span id="proj-span-4" class="arrow-close">&#10148;</span></a> </div>
+            <div class="collapse pf-cl show" id="proj1">
+                <div class="card card-body">
+                    <label><strong>PhishHook - </strong>Detection Of Phishing Websites Using An Efficient Feature-Based Machine Learning Framework.<label style="float: right;">[Dec2018-Apr2019]</label></label>
+                    Following four features are extracted from a webpage using a Chrome extension and fed to random forest machine learning algorithm:
                     <ul>
                         <li>URL - Based Features </li>
                         <li>Domain - Based Features </li>
@@ -65,30 +82,48 @@
                         <li>Blacklist database</li>
                     </ul>
                     <em>Utilized: Python 3.7(CNN);JSON(Chrome WebExtension);Perl(AWIS API);HTML;CSS</em>
-                </li>
-                <li>
-                    <strong>FTicket</strong> – Client Project [July 2018-Oct 2018] A Standalone windows application build in Visual Basic which is used to validate barcodes on entry tickets to a football stadium in Malappuram. Later on client request,
-                    bulid a login oriented secure barcode generator in Python.
+                </div>
+            </div>
+
+            <div class="collapse pf-cl" id="proj2">
+                <div class="card card-body">
+                    <label><strong>FTicket  –  </strong>Client Project<label style="float: right;">[July 2018-Oct 2018]</label></label>
+                    <label> A Standalone windows application build in Visual Basic which is used to validate barcodes on entry tickets to a football stadium in Malappuram. Later on client request, bulid a login oriented secure barcode generator in Python.</label>
+
                     <em>Utilized: Visual Basic 6;Python 3.7;PyBarcode;Tkinter Library;Oracle ODBC</em>
-                </li>
-                <li>
-                    <strong>Onpicnic</strong> [April 2018] An online platform that handles group tours and pilgrimages. This enables the users to compare different packages available and to book their tour. Users are provided with every details of the
-                    tour including bus details, food menu, hotel amenities and so on. <br/>Link to:<a href="https://onpicnic.com">Onpicnic.com</a> <em>Utilized: PHP;MySQL;Javascript;HTML;CSS</em></li>
-                <li>
-                    <strong>LectNote</strong> [Dec 2017 – March 2018] An android application for sharing notes and relevant information between faculties and students. Faculties have a separate web interface. <br/>Link to:<a href="https://github.com/AmeerMuhammed/LectNote">Github Repo</a>                    <em>Utilized:
-                    Java in Android Studio;PHP;MySQL;Javascript;HTML;CSS</em></li>
-            </ul> -->
+
+                </div>
+            </div>
+
+            <div class="collapse pf-cl" id="proj3">
+                <div class="card card-body">
+                    <label><strong>Onpicnic</strong><label style="float: right;">[April 2018]</label></label>
+                    <label> An online platform that handles group tours and pilgrimages. This enables the users to compare different packages available and to book their tour. Users are provided with every details of the tour including bus details, food menu, hotel amenities and
+                            so on.</label> <label>Link to: <a href="https://onpicnic.com">Onpicnic.com</a></label>
+                    <em>Utilized: PHP;MySQL;Javascript;HTML;CSS</em>
+
+                </div>
+            </div>
+
+            <div class="collapse pf-cl" id="proj4">
+                <div class="card card-body">
+                    <label><strong>LectNote</strong><label style="float: right;">[Dec 2017 – March 2018]</label></label>
+                    <label> An android application for sharing notes and relevant information between faculties and students. Faculties have a separate web interface.</label>
+                    <label>Link to: <a href="https://github.com/AmeerMuhammed/LectNote">Github Repo</a></label>
+                    <em>Utilized: Java in Android Studio;PHP;MySQL;Javascript;HTML;CSS</em>
+                </div>
+            </div>
         </div>
-        <hr>
-        <h1 class="skills">Stack</h1>
-        <label id="skill-tab" href="#">C++</label>
-        <label id="skill-tab" href="#">Python</label>
-        <label id="skill-tab" href="#">Visual Basic</label>
-        <label id="skill-tab" href="#">JavaScript</label> <br/><br/><br/><br/><br/>
-        <label id="skill-tab" href="#">HTML</label>
-        <label id="skill-tab" href="#">CSS</label>
-        <label id="skill-tab" href="#">PHP</label>
-        <label id="skill-tab" href="#">MySQL</label>
+        <div style="margin-bottom: 25px;">
+            <h1 style="margin-bottom:25px;">Stack</h1>
+            <label id="skill-tab" href="#">C++</label>
+            <label id="skill-tab" href="#">Python</label>
+            <label id="skill-tab" href="#">Visual Basic</label>
+            <label id="skill-tab" href="#">JavaScript</label><br>
+            <label id="skill-tab" href="#">HTML</label>
+            <label id="skill-tab" href="#">CSS</label>
+            <label id="skill-tab" href="#">PHP</label><br>
+            <label id="skill-tab" href="#">MySQL</label></div>
     </div>
     <div id="contact" class="footer">
         <a href="mailto:ameer@clevero.com">Email</a>
@@ -97,6 +132,9 @@
 
         <h6>© 2019 Clevero Inc.</h6>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
 
 </html>
